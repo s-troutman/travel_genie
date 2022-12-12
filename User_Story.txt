@@ -1,0 +1,98 @@
+User Story for Team 1 -Travel Genie
+
+
+==Landing Page==
+
+ - User will be given two choices
+
+	- log in form AND create account button (side by side)
+
+		- Log In form: user name / password / submit button 
+			 
+			 - successful login -> redirect to Home Page
+
+			 - unsuccessful login -> will see an error message and remain on the same page
+
+		- Clicking on Create Account -> redirect to registration form
+		
+			- Registration form : user name / nickname / password / confirm password / submit button / cancel button 
+
+				- Clicking on submit and successful resgistration -> redirect to Home Page
+
+				- Clicking on submit and unsuccessful login -> will see an error message and remain on the same page
+
+ 				- clicking cancel button: redirect to Landing Page
+
+		
+==Navigation== 
+
+ - Present on all pages with Home button AND Access Wish List button AND Log Out button
+
+	- Clicking on Home -> remain on the same page
+
+	- Clicking on Access Wish List -> direct to Wish List page	
+	
+	- Clicking on Log Out -> direct to Landing Page
+
+
+
+==Home Page== 
+	
+ - User will be given Summon the Genie button
+	
+	- Clicking on Summon the Genie -> direct to Genie page
+
+	
+
+==Genie Page== 
+
+- User will be given four animated panels AND Submit button AND Reset button
+	
+	- each panel will let the user choose scenery / activity level / price range / kids friendliness
+	
+	- each category will have a few choices displayed in animated panels
+
+	- Clicking on submit -> direct to Make A Wish Page
+	
+	- Clicking on reset -> remain on the same page but the panels will reset 
+
+
+
+==Make A Wish Page==
+
+- User will see all the cities that matches their choices AND Make a Wish button AND Resummon the Genie button
+	
+	- User can choose one from the list via checkbox 
+
+	- Clicking on Make a Wish will add ONE wish to user's wish list -> will see a success message and a See Your Wishes button to direct to Wish List Page
+	
+	- Clicking on Resummon the Genie button -> direct to Genie Page. 
+	
+- It is possible to get an empty list. In that case, user will see a message and a button to Resummon the Genie. 
+
+	- Clicking on Resummon the Genie button -> direct to Genie Page. 
+
+		 
+
+==Wish List Page== 
+	
+	- display a list of wishes showing country, number of entertainments chosen
+
+	- each wish will have a details button
+
+		- click on the detail button -> redirect to a detail page
+			- detail page will display city, country, entertainment, activity level, price range, kids-friendly of the wish user made
+			- detail page will have button to return to the wish list page
+
+	- each wish will have an edit button
+
+		- click on the edit button -> redirect to a entertainment selection page
+			- eidt page will display all entertainments a city offers and allow user to renew their selection
+			- edit page will have button to submit change -> then return to the wish list page
+			- edit page will have button to return to the wish list page
+       	
+	- each wish will have a delete button				
+
+		- click on delete button will invoke a pop-up confirmation request message
+			- choosing yes will delete that wish and return to the wish list page
+			- choosing no will return to the wish list page	

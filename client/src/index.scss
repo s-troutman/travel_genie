@@ -1,0 +1,250 @@
+// Variables
+$headingFont: 'Lobster Two', cursive;
+$paragraphFont: 'Lato', sans-serif;
+$letterSpacing: .1rem;
+$genieWidth: 400px;
+$genieHeight: 400px;
+$lampWidth: 100px;
+$smallSize: 130px;
+$warningButton: #ecce32;
+$warningHover: #c4aa2a;
+$primaryButton: #0c3f5c;
+$dangerButton: #e78b4b;
+$dangerHover: #c7683b;
+$backgroundColor: #25a1ea;
+
+// Mixins
+@mixin container {
+    padding: 2em;
+}
+
+@mixin display {
+    display: block;
+    align-self: center;
+    text-align: center;
+}
+
+@mixin smallSize {
+    width: $smallSize;
+    height: $smallSize;
+}
+
+@mixin genie {
+    @include display;
+    width: $genieWidth;
+    height: $genieHeight;
+    opacity: 0;
+    top: 0;
+    left: 335px;
+}
+
+@mixin lamp {
+    @include display;
+    position: absolute;
+    width: $lampWidth;
+    top: 325px;
+}
+
+@mixin notFoundCloud {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin notFoundLamp {
+    position: absolute;
+    width: $lampWidth;
+    top: 90%;
+    left: 75%;
+}
+
+// navigation
+.navbar.navbar-dark.bg-dark {
+    background-color: $primaryButton !important;
+}
+
+@media (min-width: 320px) {
+    // html/body
+    html {
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, #fff, #25a1ea);
+        min-height: 100%;
+        height: 100vh;
+    }
+
+    html, body {
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        right: 0; 
+        left: 0;
+        overflow: auto;
+    }
+
+    // headings
+    h1, h2 {
+        font-family: $headingFont;
+        letter-spacing: $letterSpacing;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #homeH2 {
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    #wishListH2:after {
+        content: "";
+        display: block;
+        font-family: $headingFont;
+        width: 100%;
+        max-width: 100%;
+        border-bottom: 0.1em solid #000;
+        padding-top: .5em;
+    }
+
+    // not found
+    #notFoundH1 {
+        position: absolute;
+        top: 42%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 6em;
+        z-index: 1;
+    }
+
+    .notFound {
+        position: relative;
+        text-align: center;
+    }
+
+    p.animate3 {
+        text-align: center;
+    }
+
+    #notFoundCloud {
+        @include notFoundCloud();
+    }
+
+    .notFoundLamp {
+        @include notFoundLamp();
+    }
+
+    // paragraphs
+    p {
+        font-family: $paragraphFont;
+    }
+
+    // links
+    #hereLink {
+        color: #0c3f5c;
+    }
+
+    #hereLink:hover {
+        color: #ecce32;
+        text-decoration: none;
+    }
+
+    .wishList {
+        margin-right: 1em;
+    }
+
+    .container {
+        @include container();
+    }
+
+    #logo {
+        @include smallSize();
+    }
+
+    #genie {
+        @include genie();
+    }
+
+    #lamp {
+        @include lamp();
+    }
+
+    #animationText {
+        text-align: center;
+    }
+
+    #travelGenieText {
+        max-width: 100%;
+    }
+
+    // Background image
+    #welcomeDesert {
+        width: 100%; 
+        height: 100%; 
+        position: fixed; 
+        left: 0px; 
+        top: 0px; 
+        z-index: -1;
+    } 
+    // Buttons
+    .logout, .addWish {
+        background-color: $backgroundColor;
+        border: 1px solid $backgroundColor;
+    }
+
+    .logout:hover, .addWish:hover, .btn.btn-primary:hover, .btn.btn-dark:hover, .btn.btn-warning {
+        background-color: $warningButton;
+        border: 1px solid $warningButton;
+        transform: scale(1.05);
+    }
+
+    .btn.btn-warning:hover {
+        background-color: $warningHover;
+        border: 1px solid $warningHover;
+    }
+
+    .btn.btn-danger {
+        background-color: $dangerButton;
+        border: 1px solid $dangerButton;
+    }
+
+    .btn.btn-danger:hover {
+        background-color: $dangerHover;
+        border: 1px solid $dangerHover;
+    }
+
+    .btn.btn-primary, .btn.btn-dark {
+        background-color: $primaryButton;
+        border: 1px solid $primaryButton;
+    }
+
+    // Table
+    table {
+        width: 100%;
+        margin-top: 2%;
+        font-family: $paragraphFont;
+    }
+    
+    td, th {
+        margin: 2% 0;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    tr {
+        font-family: $paragraphFont;
+    }
+    
+    .btn-column {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 3rem;
+    }
+}

@@ -1,0 +1,418 @@
+h1 {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar > .container {
+  padding: 0 !important;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 150px;
+  height: auto;
+}
+
+p.Introduction {
+  text-align: center;
+  font-size:6rem;
+  font-weight: 800;
+}
+
+a.btn.btn-light {
+  margin-top: 3% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+  background-color: #25a1ea;
+  border: 1px solid #25a1ea;
+}
+
+a.btn.btn-dark {
+  margin-top: 3% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+  background-color: #0c3f5c;
+  margin-bottom: 1%;
+}
+
+a.btn.btn-dark:hover, a.btn.btn-light:hover {
+  background-color: #ecce32;
+  border: 1px solid #ecce32;
+  transform: scale(1.05);
+}
+
+div.login.mb-2{
+  font-size: 24px;
+  font-family: 'Lobster Two', cursive;
+  margin-top: 4.5rem!important;
+  margin-bottom: -4.5rem!important;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+div.Account.mb-2{
+  font-size: 24px;
+  font-family: 'Lobster Two', cursive;
+  margin-top: 4.5rem!important;
+  margin-bottom: -4.5rem!important;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+h3.nickName{
+  font-family: 'Lobster Two', cursive;
+  padding-top: 1em;
+}
+
+div.accountButtons{
+  margin-top: 5rem!important;
+  margin-bottom: -4.5rem!important;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+form.Account{
+  margin-top: -4rem!important;
+}
+
+div.loginHeader{
+  font-family: 'Lobster Two', cursive;
+  margin: auto;
+  width: 50%;
+  font-size: 45px;
+  text-align: center;
+  padding: 10px;
+}
+
+p#animationText{
+  font-size: 20px;
+  font-family: 'Lobster Two', cursive;
+}
+
+div.alert.alert-danger{
+  margin-top: 5rem!important;
+  margin-bottom: -4.5rem!important;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+input{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+  margin-right: 2rem!important;
+}
+
+input#scenery{
+  margin-left: .5rem!important;
+  margin-right: 1rem!important;
+}
+
+h3{
+  font-family: 'Lobster Two', cursive;
+  font-size: 28px!important;
+}
+
+input#price-range{
+  margin-left: .5rem!important;
+  margin-right: 1rem!important;
+}
+
+input#activity-level{
+  margin-left: .5rem!important;
+  margin-right: 1rem!important;
+}
+
+input#kidFriendly{
+  margin-left: -1.5rem!important;
+  margin-right: 1rem!important;
+}
+
+div.kidFriendly-select.mb-5{
+  font-family: 'Lobster Two', cursive;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+div.loginButtons{
+  margin-top: 5rem!important;
+  margin-bottom: -4.5rem!important;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+img#lamp {
+  animation: wiggle 2s linear infinite;
+
+}
+
+img.notFoundLamp {
+  animation: wiggle 2s linear infinite; 
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes move {
+  0%{
+    scale: 1;
+    opacity: 1;
+  }
+  15% {
+    scale: 0.85;
+    opacity: 0.75;
+  }
+  25% {
+    scale: 0.75;
+    opacity: 0.5;
+  }
+  35% {
+    scale: 0.65;
+    opacity: 0.25;
+  }
+  50% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  65% {
+    scale: 0.65;
+    opacity: 0.25;
+  }
+  75%{
+    scale: 0.75;
+    opacity: 0.5;
+  }
+  85% {
+    scale: 0.85;
+    opacity: 0.75;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+img#lamp {
+  position: absolute;
+  border: none;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  filter: drop-shadow(0 0 0.75rem rgb(80, 68, 0));
+}
+
+img#travelGenieText{
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+}
+
+
+img#genie{
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+}
+
+img#cityImage {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+h3.nickName{
+  border-bottom: 0.1em solid #000;
+  margin: auto;
+  width: 50%;
+  font-size: 45px;
+  text-align: center;
+  padding: 10px;
+}
+
+h4{
+  margin: auto;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+img#genieHome{
+  margin-top: -3rem;
+  width: 30%;
+  height: 30%;
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+  animation: move 4s linear infinite; 
+}
+
+img#genieForm{
+  margin-right: -30%;
+  margin-top: -30rem;
+  width: 30%;
+  height: 30%;
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+  animation: move 4s linear infinite; 
+}
+
+img#genieForm2{
+  margin-top: -1rem;
+  width: 50%;
+  height: 50%;
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+  animation: move 4s linear infinite; 
+}
+
+img#genieForm3{
+  margin-top: -1rem;
+  width: 30%;
+  height: 30%;
+  filter: drop-shadow(0 0 0.75rem rgb(26, 44, 204));
+  animation: move 4s linear infinite; 
+}
+
+img#homeCloud{
+  opacity: 50%;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  transform: scaleX(-1);
+  margin-right: 8.5%!important;
+  margin-top: -1% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+  margin-bottom: -46%;
+  width: 30%;
+  height: 30%;
+}
+
+img#homeCloud2{
+  opacity: 50%;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  margin-right: 61.5%!important;
+  margin-top: 18% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+  margin-bottom: -23%;
+  width: 30%;
+  height: 30%;
+}
+
+p.sorry{
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+}
+
+button, a.btn {
+  font-family: "Lato", sans-serif;
+  border: 0;
+  font-size: 18px!important;
+  border-radius: 15px!important;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+a.nav, a.nav.active {
+  margin-right: 1rem;
+  font-family: "Lato", sans-serif;
+  border: 0;
+  font-size: 18px!important;
+  border-radius: 56px!important;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:before, a.btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+button:hover, a.btn:hover, a:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+h2#homeHover{
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(26, 44, 204),
+      0 0 82px  rgb(26, 44, 204),
+      0 0 92px  rgb(26, 44, 204),
+      0 0 102px  rgb(26, 44, 204),
+      0 0 151px  rgb(26, 44, 204);
+  font-size: 25px;
+  font-style: italic;
+  opacity: 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
+

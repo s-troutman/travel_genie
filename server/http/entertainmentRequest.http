@@ -1,0 +1,33 @@
+@url = http://localhost:8080/api/travelgenie/entertainment
+
+### GET all entertainments
+
+GET {{url}} HTTP/1.1
+Origin: http://localhost:3000
+
+### GET an entertainment by ID
+
+GET {{url}}/1 HTTP/1.1
+Origin: http://localhost:3000
+
+### GET return a 400 if id is invalid
+
+GET {{url}}/0 HTTP/1.1
+Origin: http://localhost:3000
+
+### GET return a 404 if entertainment is not found
+
+GET {{url}}/999 HTTP/1.1
+Origin: http://localhost:3000
+
+
+### GET all city with specific cityId
+
+GET {{url}}/city/1 HTTP/1.1
+Origin: http://localhost:3000
+
+
+### GET empty list with invalid cityId
+
+GET {{url}}/city/999 HTTP/1.1
+Origin: http://localhost:3000

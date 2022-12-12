@@ -1,0 +1,33 @@
+@url = http://localhost:8080/api/travelgenie/city
+
+### GET all city
+
+GET {{url}} HTTP/1.1
+Origin: http://localhost:3000
+
+### GET a city by ID
+
+GET {{url}}/1 HTTP/1.1
+Origin: http://localhost:3000
+
+### GET return a 400 if id is invalid
+
+GET {{url}}/0 HTTP/1.1
+Origin: http://localhost:3000
+
+### GET return a 404 if city is not found
+
+GET {{url}}/999 HTTP/1.1
+Origin: http://localhost:3000
+
+
+### GET all city with specific scenery
+
+GET {{url}}/scenery/BEACH HTTP/1.1
+Origin: http://localhost:3000
+
+
+### GET empty list with invalid scenery
+
+GET {{url}}/scenery/sand HTTP/1.1
+Origin: http://localhost:3000

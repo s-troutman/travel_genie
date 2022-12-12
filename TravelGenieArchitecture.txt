@@ -1,0 +1,81 @@
+## Travel Genie Architecture
+```
+travel-genie-api
+out side of src 
+│ 
+├───.idea
+│ 
+├───http
+│ 
+├───sql
+│ 
+├───pom.xml
+
+src
+├───main
+│   ├───java
+│   │   └───learn
+│   │       └───travelgenie
+│   │           │   App.java
+│   │           │
+│   │           ├───controllers
+│   │           │       AuthController.java
+│   │           │       ErrorResponse.java
+│   │           │       GlobalExceptionHandler.java
+│   │           │       CityController.java
+│   │           │       EntertainmentController.java
+│   │           │       WishListController.java
+│   │           │       
+│   │           ├───data
+│   │           │       AppUserMapper.java
+│   │           │       CityMapper.java
+│   │           │       EntertainmentMapper.javaT
+│   │           │       WishListMapper.java
+│   │           │       AppUserJdbcTemplateRepository.java
+│   │           │       CityJdbcTemplateRepository.java
+│   │           │       EntertainmentJdbcTemplateRepository.java
+│   │           │       WishListJdbcTemplateRepository.java
+│   │           │       CityFileRepository.java
+│   │           │       EntertainmentFileRepository.java
+│   │           │       WishListFileRepository.java
+│   │           │
+│   │           ├───domain
+│   │           │       CityService.java
+│   │           │       EntertainmentService.java
+│   │           │       WishListService.java
+│   │           │       ResulType.java
+│   │           │       Result.java
+│   │           │       Response.java
+│   │           │
+│   │           ├───models
+│   │           │       AppUser.java
+│   │           │       City.java
+│   │           │       Entertainment.java
+│   │           │       WishList.java
+│   │           │
+│   │           └───security
+│   │                   AppUser.java
+│   │                   JwtConverter.java
+│   │                   JwtRequestFilter.java
+│   │                   SecurityConfig.java
+│   │
+│   └───resources
+│            application.properties
+└───test
+    └───java
+        └───learn
+            └───travelgenie
+                ├───data
+                │       AppUserJdbcTemplateRepositoryTest.java
+                │       CityJdbcTemplateRepositoryTest.java
+                │       EntertainmentJdbcTemplateRepositoryTest.java
+                │       WishListJdbcTemplateRepositoryTest.java
+                │       WishListFileRepositoryTest.java
+                │       EntertainmentFileRepositoryTest.java
+                │       CityFileRepositoryTest.java
+                │
+                └───domain
+                        CityServiceTest.java
+                        EntertainmentServiceTest.java
+                        WishListServiceTest.java
+```
